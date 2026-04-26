@@ -4,12 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Next Page</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="katbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 </head>
 <body>
-  <main>
-    <h1>You made it to the next page.</h1>
-    <p><a href="index.html">Go back</a></p>
+
+  <main class="car-selection" aria-label="Car model choices">
+    <a class="car-card hvr-bob" href="cube.html">
+      <img src="img/cube.png" alt="Cube car model" class="car-card-image">
+    </a>
+
+    <a class="car-card hvr-bob" href="puris.html">
+      <img src="img/puris.png" alt="Puris car model" class="car-card-image">
+    </a>
+
+    <a class="car-card hvr-bob" href="slugbug.html">
+      <img src="img/slugbug.png" alt="Slugbug car model" class="car-card-image">
+    </a>
   </main>
+
+  <div id="kittykat" class="kittykat">
+    <div class="kittykat-avatar">
+      <img src="img/kitty-kat-wink.PNG" alt="Kitty Kat avatar" class="kittykat-avatar-image">
+    </div>
+    <div class="kittykat-body">
+      <div class="kittykat-text">Which base car model looks the bestest?<a href="index.html"></div>
+        <a class="kittykat-btn" href="index.html">Go back</a>
+    </div>
+  </div>
+    
 </body>
 </html>

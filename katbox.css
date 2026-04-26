@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
-
 .kittykat-gif{
   position: fixed;
   left: 50%;
@@ -12,7 +10,6 @@
 
 .kittykat{
   position: fixed;
-  font-family: "Mansalva", cursive, sans-serif;
   font-size: 30px;
   left: 150px;
   bottom: 70px;
@@ -49,12 +46,6 @@
   width: 100%;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  background-image: url("img/white-crumpled-paper-texture-background.png");
-}
-
 .kittykat-body > :first-child{
   flex: 1;
 }
@@ -75,3 +66,48 @@ body{
     transform: translateY(1.25px);
     background: #67afe2;
  }
+
+.car-selection{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 32px;
+  padding-bottom: 180px;
+  box-sizing: border-box;
+}
+
+.car-card{
+  width: 400px;
+  color: #3d4b5e;
+  background: #ffffffa9;
+  border: 1px dashed #adecffc6;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+
+.car-card-image{
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+}
+
+.car-card-label{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+@media (max-width: 980px){
+  .car-selection{
+    flex-direction: column;
+    padding-bottom: 180px;
+  }
+
+  .car-card{
+    width: 300px;
+  }
+}
